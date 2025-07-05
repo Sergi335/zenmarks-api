@@ -1,0 +1,31 @@
+{
+  "name": "zenmarks-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "tsc": "tsc",
+    "start": "node build/index.js",
+    "lint": "ts-standard",
+    "lint:fix": "ts-standard --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergio Sánchez",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "5.0.3",
+    "ts-node-dev": "2.0.0",
+    "ts-standard": "12.0.2",
+    "typescript": "5.8.3"
+  },
+  "dependencies": {
+    "express": "5.1.0"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends": ["./node_modules/ts-standard/eslintrc.json"]
+  }
+}
